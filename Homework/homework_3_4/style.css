@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url(./font2/Gilroy-Bold.woff2);
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url(./font2/Gilroy-Medium.woff2);
+}
+
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url(./font2/Gilroy-Regular.woff2);
+}
+
+@font-face {
+    font-family: 'Gilroy-Semibold';
+    src: url(./font2/Gilroy-Semibold.woff2);
+}
+
+body {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-style: normal;
+	font-weight: 400;
+    line-height: normal;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+
+.top {
+    padding-bottom: 96px;
+    width: 1170px;
+    margin: 0 auto;   
+}
+
+.header {
+    padding-top: 51px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__menu {
+    width: 533px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__link {
+	font-size: 14px;
+	color: #000;
+    font-family: 'Gilroy-Medium';
+}
+
+.header__link__home {
+    color: #F25822;
+    font-family: 'Gilroy-SemiBold';
+    font-size: 14px;
+}
+
+.top__content {
+    margin-top: 94.71px;
+    margin-bottom: 162.45px;
+    width: 1170px;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 41px;
+}
+
+
+.title {
+    margin-bottom: 17px;
+    color: #000;
+    font-family: 'Gilroy-Bold';
+    font-size: 60px;
+    width: 522px;
+    height: 222px;
+}
+
+.text {
+    color: #888;
+    font-family: Gilroy-Medium;
+    font-size: 20px;
+    width: 466px;
+    height: 48px;
+}
+
+.top__buttons {
+	display: flex;
+	gap: 72px;
+}
+
+.button1 {
+    color: #FFF;
+    border-radius: 50px;
+    border: none;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    padding: 15px 36px 16px 35px;
+    font-family: 'Gilroy-Bold';
+    font-size: 15px;
+}
+
+.button2 {
+    color: #AAA;
+    border: none;
+    background: none;
+    font-family: 'Gilroy-Bold';
+    font-size: 15px;
+}
+
+
+.top__buttons {
+    margin-top: 37px;
+}
+
+.top__logos {
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+}
