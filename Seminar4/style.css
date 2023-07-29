@@ -10,7 +10,6 @@ body {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 	background: #020a18;
-	font-family: 'Open Sans', sans-serif;
 	font-family: 'Gilroy-Bold';
 	font-style: normal;
 	font-weight: 600;
@@ -109,4 +108,48 @@ footer {
 .logos {
 	display: flex;
 	justify-content: space-between;
+}
+
+.content {
+	display: grid;
+	gap: 30px;
+	grid-template-columns: repeat(3, 362px);
+	justify-content: center;
+	padding-top: 264px;
+	padding-bottom: 243px;
+}
+
+.item {
+	border-radius: 10px;
+	background: #132035;
+	padding: 30px;
+	display: grid;
+	justify-items: center;
+	gap: 30px;
+}
+
+.item_big {
+	grid-column: span 2;
+	grid-row: span 2;
+	gap: 60px;
+}
+
+.heading {
+	color: #FFF;
+	text-align: center;
+	font-family: Open Sans;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 125%;
+}
+
+.item__text {
+	color: #FFF;
+	text-align: center;
+	font-family: Open Sans;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 160%;
 }
