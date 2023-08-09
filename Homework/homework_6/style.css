@@ -30,8 +30,9 @@ body {
 }
 
 .top__left {
+    width: 111px;
     display: flex;
-    gap: 41px;
+    justify-content: space-between;
 }
 
 .top__logo {
@@ -42,18 +43,37 @@ body {
 .top__magnifier {
     padding-top: 26.21px;
     padding-bottom: 20px;
+    width: 26px;
+    height: 27px;
+    background-color: #222;
+    border: none;
+	cursor: pointer;
 }
 
 .top__right {
     padding-top: 26px;
     padding-bottom: 20px;
+    display: flex;
+    gap: 33px;
+}
+
+.top_btns {
+    background-color: #222;
+    border: none;
+	cursor: pointer;
+    
 }
 
 .content {
     background-color: #f1e4e6;
     display: flex;
     flex-direction: row;
-    gap: 64px;
+
+}
+
+.main__img {
+    width: 800px;
+    height: 764px;
 }
 
 .content_block {
@@ -61,6 +81,8 @@ body {
     gap: 16px;
     padding-top: 290px;
     padding-bottom: 381px;
+    margin-left: 64px;
+    
 }
 
 .content__title {
@@ -88,31 +110,51 @@ body {
 .categories {
     margin-top: 65px;
     margin-bottom: 96px;
+}
+
+.categories__wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 360px);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     justify-content: center;
     gap: 30px;
 }
 
-.item {
-    position: relative;
-    text-align: center;
+.item__women {
+    background-image: url(./img/for_women.png);
+    width: 360px;
+    height: 260px;
 }
 
-.item__big {
+.item__men {
+    background-image: url(./img/for_men.png);
+    width: 360px;
+    height: 260px;
+}
+
+.item__kids {
+    background-image: url(./img/for_kids.png);
+    width: 360px;
+    height: 260px;
+}
+
+.item__acs {
+    background-image: url(./img/accesories.png);
+    grid-row: 2;
+    grid-column: 1 / 4;
     width: 1140px;
+    height: 180px;
 }
 
 .category__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: absolute;
-    top: 50%;
+    align-items: center;
+    background: rgba(33, 22, 22, 0.7);
     width: 100%;
     height: 100%;
-    transform: translate(0%, -50%);
-    background: rgba(33, 22, 22, 0.7);
+    cursor: pointer;
 }
 
 .category__text h3 {
@@ -128,7 +170,6 @@ body {
     text-transform: uppercase;
     color: #F16D7F;
 }
-
 
 .featured__heading {
     display: flex;
@@ -199,4 +240,94 @@ body {
     background: none;
     display: flex;
     justify-content: center;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        max-width: 736px;
+    }
+
+    .top__wrapper {
+        height: 74px;
+    }
+
+    .top__left {
+        margin-left: 32px;
+    }
+
+    .top__right {
+        margin-right: 41px;
+    }
+    
+    .content {
+        gap: 39px;
+        height: 368px;
+    }
+
+    .main__img {
+        width: 386px;
+        height: 368px;
+    }
+
+    .content_block {
+        padding-top: 138px;
+        padding-bottom: 138px;
+    }
+
+    .title {
+        font-size: 44px;
+    }
+     
+    .title-text {
+        font-size: 24px;
+    }
+
+    .categories {
+        margin-bottom: 110px;
+    }
+
+    .categories__wrapper {
+        gap: 20px;
+    }
+
+    .item__women {
+        width: 232px;
+        height: 168px;
+    }
+    
+    .item__men {
+        width: 232px;
+        height: 168px;
+    }
+    
+    .item__kids {
+        width: 232px;
+        height: 168px;
+    }
+    
+    .item__acs {
+        width: 735px;
+        height: 116px;
+    }
+
+
+    .products {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .card__text {
+        background-color: #F8F8F8;
+        padding: 24px 29px 20px 16px;
+    }
+
+    .products__btn {
+        margin-top: 32px;
+        margin-bottom: 71px;
+    }
+
 }
