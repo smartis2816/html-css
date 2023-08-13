@@ -22,11 +22,14 @@ body {
 .top__wrapper {
     height: 75px;
     background-color: #222;
+
 }
 
 .top {
     display: flex;
     justify-content: space-between;
+    margin-right: 240px;
+    margin-left: 231px;
 }
 
 .top__left {
@@ -64,11 +67,14 @@ body {
     
 }
 
-.content {
+.content__wrapper {
     background-color: #f1e4e6;
+    margin: 0 auto;
+}
+
+.content {
     display: flex;
     flex-direction: row;
-
 }
 
 .main__img {
@@ -252,16 +258,12 @@ body {
         height: 74px;
     }
 
-    .top__left {
+    .top {
+        margin-right: 41px;
         margin-left: 32px;
     }
 
-    .top__right {
-        margin-right: 41px;
-    }
-    
-    .content {
-        gap: 39px;
+    .content__wrapper {
         height: 368px;
     }
 
@@ -272,7 +274,12 @@ body {
 
     .content_block {
         padding-top: 138px;
+        padding-right: 34px;
         padding-bottom: 138px;
+    }
+
+    .content-text {
+        width: 283px;
     }
 
     .title {
@@ -328,6 +335,101 @@ body {
     .products__btn {
         margin-top: 32px;
         margin-bottom: 71px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 359px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .top__wrapper {
+        height: 74px;
+    }
+
+    .top {
+        margin-right: 16px;
+        margin-left: 32px;
+    }
+
+
+    .hidden {
+        display: none;
+    }
+
+    .content__wrapper {
+        height: 363px;
+    }
+
+    .main__img {
+        display: none;
+    }
+
+    .content_block {
+        padding-top: 148px;
+        padding-left: 56px;
+        padding-bottom: 149px;
+        padding-right: 56px;
+        width: 263px;
+        height: 66px;
+    }
+
+    .content-text {
+        width: 236px;
+    }
+
+    .title {
+        font-size: 38px;
+    }
+     
+    .title-text {
+        font-size: 20px;
+    }
+
+    .categories {
+        margin-bottom: 64px;
+    }
+
+    .categories__wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 64px;
+        gap: 32px;
+    }
+
+    .item__women,
+    .item__men,
+    .item__kids,
+    .item__acs {
+        width: 343px;
+    }
+
+    .featured__heading p {
+        margin-top: 3px;
+        margin-bottom: 65px;
+    }
+
+    .products {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    .card__text h3 {
+        margin-top: 23px;
+    }
+
+    .card__text p {
+        margin-top: 13px;
+        margin-bottom: 18px;
+    }
+
+    .products__btn {
+        margin-top: 40px;
+        margin-bottom: 85px;
     }
 
 }
