@@ -206,6 +206,47 @@ body {
     gap: 30px;
 }
 
+.add_to_cart {
+    position: relative;
+}
+ 
+.cart {
+    top: 40%;
+    left: 30%;
+    padding: 10px 15px;
+    gap: 11px;
+    border: 1px solid #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    z-index: 1;
+}
+ 
+.text__cart {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.card-img {
+    width: 100%;
+}
+ 
+.card-img:hover {
+    filter: brightness(40%);
+}
+ 
+.add_to_cart:hover .cart {
+    position: absolute;
+    display: flex;
+}
+ 
+.add_to_cart:hover .cart:hover {
+    position: absolute;
+    display: flex;
+}
+
 .card__text {
     background-color: #F8F8F8;
     padding: 24px 16px 24px 16px;
@@ -248,6 +289,197 @@ body {
     justify-content: center;
     cursor: pointer;
 }
+
+.products__btn:hover {
+    color: #FFFFFF;
+    background: #F26376;
+}
+
+.advantages__wrapper {
+    background-color: #222224;
+    margin: 0 auto;
+    height: 341px;
+}
+
+.advantages {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.advantages__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 103px;
+    width: 360px;
+    height: 133px;
+    justify-content: space-between;
+}
+
+.advantages__card h2 {
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+}
+
+.advantages__card p {
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+}
+
+.subscribe__wrapper {
+    height: 448px;
+    background-image: url(./img/subscribe_background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.shading {
+    background: rgba(244, 244, 244, 0.7);
+}
+
+.subscribe {
+    height: 448px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 223px;
+}
+
+.subscribe__info {
+    margin-top: 97px;
+    margin-bottom: 126px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.subscribe__info p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+    height: 99px;
+}
+
+.subscribe__form {
+    width: 557px;
+    height: 142px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subscribe__form__text {
+    text-align: center;
+}
+
+.subscribe__form__text h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    color: #222224;
+}
+
+.subscribe__form__text p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #222224;
+}
+
+.subscribe__form__button form{
+    width: 356px;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+}
+
+.subscribe__form__button input{
+    width: 256px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #222224;
+    opacity: 0.67;
+    background: #E1E1E1;
+	border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+	position: relative;
+    z-index: 1;
+	overflow: hidden;
+    padding-left: 22px;
+    border: none;
+}
+
+.subscribe__form__button button{
+    width: 100px;
+    height: 49px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    background: #F16D7F;
+    cursor:pointer;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	vertical-align: middle;	
+    padding-left: 15px;
+    border: none;
+}
+
+.footer__wrapper {
+    height: 79px;
+    background-color: #222224;
+}
+
+.bottom__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom__content p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footer__icons {
+    display: flex;
+    gap: 8px;
+}
+
+.icon:hover .icon_back {
+    fill: #F16D7F;
+}
+
+.icon:hover path {
+    fill: #FFFFFF;
+}
+
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .container {
